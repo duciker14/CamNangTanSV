@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cẩm Nang Tân Sinh Viên - HueIC</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        hueicBlue: '#2e4c9a',
+                        hueicOrange: '#f47920',
+                        hueicLight: '#f4f6fa'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #2e4c9a 0%, #1a2f66 100%);
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 4px;
+            background-color: #f47920;
+            bottom: -8px;
+            left: 25%;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-hueicOrange selection:text-white">
+
+    <!-- Header / Hero Section -->
+    <header
+        class="gradient-bg text-white py-12 px-4 shadow-lg relative overflow-hidden flex flex-col items-center justify-center">
+        <!-- Decorative circle -->
+        <div class="absolute top-0 right-0 -mt-20 -mr-20 w-64 h-64 bg-white opacity-5 rounded-full blur-2xl"></div>
+        <div class="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-hueicOrange opacity-10 rounded-full blur-2xl">
+        </div>
+
+        <div class="max-w-6xl mx-auto text-center relative z-10 flex flex-col items-center">
+
+            <!-- Logo -->
+            <!-- Đã đổi tên file ảnh thành HueIC - Logo 2_3.png -->
+            <img src="./logo.png" alt="HueIC Logo"
+                class="h-28 mx-auto mb-4  p-2 rounded-full shadow-lg">
+
+            <!-- Thông tin Cơ quan chủ quản & Trường -->
+            <div class="mb-8 border-b border-white/20 pb-6 inline-block">
+                <p class="text-lg md:text-xl font-semibold uppercase tracking-widest opacity-90 mb-1">
+                    Bộ Công thương
+                </p>
+                <h2 class="text-2xl md:text-3xl font-bold uppercase text-hueicOrange tracking-wide">
+                    Trường Cao đẳng Công nghiệp Huế
+                </h2>
+            </div>
+
+            <!-- Tiêu đề chính của Landing Page -->
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight uppercase text-white drop-shadow-md">
+                Cẩm Nang Tân Sinh Viên
+            </h1>
+            <p class="text-lg mt-3 opacity-90 font-light tracking-wider uppercase">
+                Năm học 2026 - 2027
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-12">
+
+        <!-- SECTION 1: THÔNG TIN NHÀ TRƯỜNG -->
+        <section class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-hueicBlue section-title uppercase">Thông tin Nhà trường</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Các cơ sở -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg p-8 border-t-4 border-hueicOrange hover:-translate-y-1 transition duration-300">
+                    <div
+                        class="flex items-center justify-center w-16 h-16 bg-hueicLight text-hueicBlue rounded-full mb-6 mx-auto">
+                        <i class="fa-solid fa-location-dot text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-hueicBlue mb-6">Các Cơ Sở</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start gap-3">
+                            <span class="font-bold text-hueicOrange min-w-[60px]">Cơ sở 1:</span>
+                            <span>70 Nguyễn Huệ, Phường Thuận Hoá, TP. Huế (Cơ sở chính)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-bold text-hueicOrange min-w-[60px]">Cơ sở 2:</span>
+                            <span>01 Văn Tiến Dũng, Phường An Cựu, TP. Huế</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-bold text-hueicOrange min-w-[60px]">Cơ sở 3:</span>
+                            <span>TĐC Dương Nỗ Nam, Phường Dương Nỗ, TP. Huế</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Phòng ban liên hệ -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg p-8 border-t-4 border-hueicBlue hover:-translate-y-1 transition duration-300">
+                    <div
+                        class="flex items-center justify-center w-16 h-16 bg-hueicLight text-hueicOrange rounded-full mb-6 mx-auto">
+                        <i class="fa-solid fa-phone-volume text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-hueicBlue mb-6">Liên Hệ Phòng Ban</h3>
+                    <ul class="space-y-5">
+                        <li class="flex justify-between items-center border-b border-gray-100 pb-2">
+                            <span class="font-medium">Hành chính tổng hợp:</span>
+                            <a href="tel:02343834701" class="font-bold text-hueicOrange hover:underline">0234 3834
+                                701</a>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-gray-100 pb-2">
+                            <span class="font-medium">TT TSDV - CTSV:</span>
+                            <a href="tel:02343509189" class="font-bold text-hueicOrange hover:underline">0234 3509
+                                189</a>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="font-medium">Phòng Đào tạo:</span>
+                            <a href="tel:02343846814" class="font-bold text-hueicOrange hover:underline">0234 3846
+                                814</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Kênh chính thống -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg p-8 border-t-4 border-hueicOrange hover:-translate-y-1 transition duration-300">
+                    <div
+                        class="flex items-center justify-center w-16 h-16 bg-hueicLight text-hueicBlue rounded-full mb-6 mx-auto">
+                        <i class="fa-solid fa-globe text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-hueicBlue mb-6">Kênh Chính Thống</h3>
+                    <ul class="space-y-4">
+                        <li><a href="https://hueic.edu.vn/" target="_blank"
+                                class="flex items-center gap-3 hover:text-hueicOrange transition"><i
+                                    class="fa-solid fa-earth-americas w-5 text-gray-500"></i> hueic.edu.vn</a></li>
+                        <li><a href="https://sinhvien.hueic.edu.vn" target="_blank"
+                                class="flex items-center gap-3 hover:text-hueicOrange transition"><i
+                                    class="fa-solid fa-graduation-cap w-5 text-gray-500"></i> sinhvien.hueic.edu.vn</a>
+                        </li>
+                        <li><a href="https://www.facebook.com/cnhuevn" target="_blank"
+                                class="flex items-center gap-3 hover:text-blue-600 transition"><i
+                                    class="fa-brands fa-facebook w-5 text-blue-600"></i> Fanpage HueIC</a></li>
+                        <li><a href="https://www.tiktok.com/@cnhue" target="_blank"
+                                class="flex items-center gap-3 hover:text-black transition"><i
+                                    class="fa-brands fa-tiktok w-5 text-black"></i> Tiktok @cnhue</a></li>
+                        <li><a href="#" class="flex items-center gap-3 hover:text-blue-400 transition"><i
+                                    class="fa-solid fa-comment-dots w-5 text-blue-400"></i> Zalo: CĐ Công nghiệp Huế</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: KÝ TÚC XÁ -->
+        <section class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-hueicBlue section-title uppercase">Thông tin Ký Túc Xá</h2>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Thông tin đăng ký KTX năm học 2026-2027 dành cho Tân
+                    sinh viên.</p>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+                <div class="bg-hueicBlue text-white p-6 md:p-8 flex items-center gap-4">
+                    <i class="fa-solid fa-building-user text-4xl text-hueicOrange"></i>
+                    <div>
+                        <h3 class="text-2xl font-bold">Ký Túc Xá K1, K2</h3>
+                        <p class="text-sm opacity-90">KTX có 55 phòng diện tích phòng 30m2 bao gồm 1 vệ sinh 1 phòng tắm và 1 sân phơi. bố trí 4 giường tối đa 8 bạn ở 1 phòng</p>
+                    </div>
+                </div>
+
+                <div class="p-6 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <!-- Cột trái: Bảng giá -->
+                    <div>
+                        <h4
+                            class="text-lg font-bold text-hueicBlue border-b-2 border-hueicOrange pb-2 mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-money-bill-wave"></i> Chi phí lưu trú (2025-2026)
+                        </h4>
+                        <p class="text-sm text-gray-500 italic mb-4">* Đăng ký năm học 2026-2027 ký HĐ 12 tháng, nộp 1
+                            lần hoặc chia 2 lần (6 tháng/lần).</p>
+
+                        <div class="space-y-4">
+                            <div class="bg-blue-50 p-4 rounded-xl border border-blue-100">
+                                <span
+                                    class="inline-block px-2 py-1 bg-hueicOrange text-white text-xs font-bold rounded mb-2">ĐÓNG
+                                    12 THÁNG/LẦN</span>
+                                <p class="font-semibold text-gray-800">Ở lẻ (phòng 8 bạn)</p>
+                                <p class="text-sm mt-1">245.000đ/tháng &times; 12 tháng = <strong
+                                        class="text-hueicBlue text-lg">2.940.000đ/HSSV</strong></p>
+                            </div>
+
+                            <div class="bg-orange-50 p-4 rounded-xl border border-orange-100">
+                                <span
+                                    class="inline-block px-2 py-1 bg-hueicBlue text-white text-xs font-bold rounded mb-2">ĐÓNG
+                                    6 THÁNG/LẦN</span>
+                                <p class="font-semibold text-gray-800">Bao phòng</p>
+                                <p class="text-sm mt-1">1.960.000đ/tháng &times; 6 tháng = <strong
+                                        class="text-hueicOrange text-lg">11.760.000đ/phòng</strong></p>
+                            </div>
+                        </div>
+                        <p class="text-xs text-red-500 mt-2 font-medium">* Các mức giá trên chưa bao gồm chi phí điện,
+                            nước.</p>
+                    </div>
+
+                    <!-- Cột phải: Chính sách & Liên hệ -->
+                    <div class="space-y-8">
+                        <div>
+                            <h4
+                                class="text-lg font-bold text-hueicBlue border-b-2 border-hueicOrange pb-2 mb-4 flex items-center gap-2">
+                                <i class="fa-solid fa-hand-holding-heart"></i> Chính sách hỗ trợ
+                            </h4>
+                            <p
+                                class="text-sm leading-relaxed text-gray-700 bg-gray-50 p-4 rounded-lg border-l-4 border-green-500">
+                                HSSV hộ nghèo, cận nghèo vùng ĐBKK và SV tốt nghiệp trường Dân tộc nội trú Tỉnh được bố
+                                trí KTX <strong>không cần đóng tiền trước</strong>.
+                                <br><span class="text-xs text-gray-500">(Chi phí sẽ trừ vào tiền khi nhận trợ cấp học
+                                    bổng).</span>
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4
+                                class="text-lg font-bold text-hueicBlue border-b-2 border-hueicOrange pb-2 mb-4 flex items-center gap-2">
+                                <i class="fa-solid fa-map-location-dot"></i> Địa chỉ & Liên hệ
+                            </h4>
+                            <ul class="space-y-3 text-sm text-gray-700">
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-location-arrow text-hueicOrange mt-1"></i>
+                                    <span><strong>Địa chỉ KTX:</strong> Số 73 Phan Đình Phùng, P. Thuận Hóa, TP Huế
+                                        (Cổng số 6) - Cơ sở 1.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-utensils text-hueicOrange mt-1"></i>
+                                    <span><strong>Tiện ích:</strong> Quán ăn sinh viên cách 100-200m đa dạng.</span>
+                                </li>
+                                <li
+                                    class="flex items-start gap-2 bg-yellow-50 p-3 rounded-lg border border-yellow-200 mt-2">
+                                    <i class="fa-solid fa-address-book text-hueicBlue mt-1"></i>
+                                    <div>
+                                        <strong>Đăng ký & Bố trí phòng:</strong><br>
+                                        Liên hệ: <span class="font-bold text-lg text-hueicBlue">Thầy Nam Hải</span><br>
+                                        SĐT: <a href="tel:0961443456"
+                                            class="font-bold text-hueicOrange text-lg hover:underline">0961.443.456</a><br>
+                                        Địa điểm: Phòng BQL KTX (Tầng 1 – K1)
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: MỘT SỐ NHÓM TÌM TRỌ (QR CODES) -->
+        <section>
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-hueicBlue section-title uppercase">Nhóm Thông Tin Tìm Trọ</h2>
+                <p class="mt-4 text-gray-600">Quét mã QR để tham gia các hội nhóm hỗ trợ tìm phòng trọ uy tín cho sinh
+                    viên HueIC.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+                <!-- Box 1 -->
+                <div
+                    class="bg-white rounded-2xl shadow-md p-6 text-center border hover:shadow-xl transition duration-300 group">
+                    <h4 class="font-bold text-hueicBlue mb-4 line-clamp-2">Nhóm Trọ 1</h4>
+                    <!-- Mã QR giả lập bằng CSS/Hình ảnh -->
+                    <div
+                        class="w-full aspect-square bg-gray-100 rounded-xl mb-4 flex items-center justify-center p-2 border-2 border-dashed border-gray-300 group-hover:border-hueicOrange transition">
+                        <img src="qr1.jpg"
+                            alt="QR Code 1" class="w-full h-full object-contain mix-blend-multiply">
+                    </div>
+                    <button
+                        class="bg-hueicLight text-hueicBlue text-sm font-semibold py-2 px-4 rounded-full w-full group-hover:bg-hueicBlue group-hover:text-white transition">Tham
+                        gia ngay</button>
+                </div>
+
+                <!-- Box 2 -->
+                <div
+                    class="bg-white rounded-2xl shadow-md p-6 text-center border hover:shadow-xl transition duration-300 group">
+                    <h4 class="font-bold text-hueicBlue mb-4 line-clamp-2">Nhóm Trọ 2</h4>
+                    <div
+                        class="w-full aspect-square bg-gray-100 rounded-xl mb-4 flex items-center justify-center p-2 border-2 border-dashed border-gray-300 group-hover:border-hueicOrange transition">
+                        <img src="qr2.jpg"
+                            alt="QR Code 2" class="w-full h-full object-contain mix-blend-multiply">
+                    </div>
+                    <button
+                        class="bg-hueicLight text-hueicBlue text-sm font-semibold py-2 px-4 rounded-full w-full group-hover:bg-hueicBlue group-hover:text-white transition">Tham
+                        gia ngay</button>
+                </div>
+
+                <!-- Box 3 -->
+                <div
+                    class="bg-white rounded-2xl shadow-md p-6 text-center border hover:shadow-xl transition duration-300 group">
+                    <h4 class="font-bold text-hueicBlue mb-4 line-clamp-2">Nhóm Trọ 3</h4>
+                    <div
+                        class="w-full aspect-square bg-gray-100 rounded-xl mb-4 flex items-center justify-center p-2 border-2 border-dashed border-gray-300 group-hover:border-hueicOrange transition">
+                        <img src="qr3.jpg"
+                            alt="QR Code 3" class="w-full h-full object-contain mix-blend-multiply">
+                    </div>
+                    <button
+                        class="bg-hueicLight text-hueicBlue text-sm font-semibold py-2 px-4 rounded-full w-full group-hover:bg-hueicBlue group-hover:text-white transition">Tham
+                        gia ngay</button>
+                </div>
+
+                <!-- Box 4 -->
+                <div
+                    class="bg-white rounded-2xl shadow-md p-6 text-center border hover:shadow-xl transition duration-300 group">
+                    <h4 class="font-bold text-hueicBlue mb-4 line-clamp-2">Nhóm Trọ 4</h4>
+                    <div
+                        class="w-full aspect-square bg-gray-100 rounded-xl mb-4 flex items-center justify-center p-2 border-2 border-dashed border-gray-300 group-hover:border-hueicOrange transition">
+                        <img src="qr4.jpg"
+                            alt="QR Code 4" class="w-full h-full object-contain mix-blend-multiply">
+                    </div>
+                    <button
+                        class="bg-hueicLight text-hueicBlue text-sm font-semibold py-2 px-4 rounded-full w-full group-hover:bg-hueicBlue group-hover:text-white transition">Tham
+                        gia ngay</button>
+                </div>
+
+                <!-- Box 5 -->
+                <div
+                    class="bg-white rounded-2xl shadow-md p-6 text-center border hover:shadow-xl transition duration-300 group">
+                    <h4 class="font-bold text-hueicBlue mb-4 line-clamp-2">Nhóm Trọ 5</h4>
+                    <div
+                        class="w-full aspect-square bg-gray-100 rounded-xl mb-4 flex items-center justify-center p-2 border-2 border-dashed border-gray-300 group-hover:border-hueicOrange transition">
+                        <img src="qr5.jpg"
+                            alt="QR Code 5" class="w-full h-full object-contain mix-blend-multiply">
+                    </div>
+                    <button
+                        class="bg-hueicLight text-hueicBlue text-sm font-semibold py-2 px-4 rounded-full w-full group-hover:bg-hueicBlue group-hover:text-white transition">Tham
+                        gia ngay</button>
+                </div>
+
+                <!-- Box 6 -->
+                <div
+                    class="bg-white rounded-2xl shadow-md p-6 text-center border hover:shadow-xl transition duration-300 group">
+                    <h4 class="font-bold text-hueicBlue mb-4 line-clamp-2">Nhóm Trọ 6</h4>
+                    <div
+                        class="w-full aspect-square bg-gray-100 rounded-xl mb-4 flex items-center justify-center p-2 border-2 border-dashed border-gray-300 group-hover:border-hueicOrange transition">
+                        <img src="qr6.jpg" alt="QR Code 6"
+                            class="w-full h-full object-contain mix-blend-multiply">
+                    </div>
+                    <button
+                        class="bg-hueicLight text-hueicBlue text-sm font-semibold py-2 px-4 rounded-full w-full group-hover:bg-hueicBlue group-hover:text-white transition">Tham
+                        gia ngay</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center mt-12 border-t-4 border-hueicOrange">
+        <div class="max-w-6xl mx-auto px-4">
+            <h3 class="text-white text-lg font-bold mb-2">Trường Cao đẳng Công nghiệp Huế</h3>
+            <p class="mb-4">Chào mừng các Tân Sinh Viên khóa mới!</p>
+            <p class="text-sm opacity-70">© 2026 HueIC. Thiết kế dành riêng cho Cẩm Nang Tân Sinh Viên.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
